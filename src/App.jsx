@@ -7,10 +7,19 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Wave from './images/wave.svg'
 import WorkOutlineIcon from '@material-ui/icons/WorkOutline';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 function App() {
+const HandleStyle =()=>{
+  const CustomStyle = {
+    display:'none',
+  }
+  alert();
+  return CustomStyle;
+}
+ 
   return (
     <> 
-      <Header/>
+      <Header HandleStyle = {HandleStyle}/>
       <Banner/>
       <div className="wave">
         <img src={Wave} alt="wave.svg"/>
@@ -19,6 +28,7 @@ function App() {
       <Service/>
       <Contact/>
       <Footer/>
+      
     </>
     
   );

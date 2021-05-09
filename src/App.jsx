@@ -21,9 +21,9 @@ const HandleStyle =()=>{
     <> 
       <Header HandleStyle = {HandleStyle}/>
       <Banner/>
-      <div className="wave">
+      {/* <div className="wave">
         <img src={Wave} alt="wave.svg"/>
-      </div>
+      </div> */}
       <About/>
       <Service/>
       <Contact/>
